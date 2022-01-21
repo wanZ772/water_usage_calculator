@@ -46,7 +46,7 @@ int main()
         printf("First 20 meter cube: RM%.2f\n", total_cube*.55);
         
     }
-    if (total_cube > 20 && total_cube < 40)   {
+    if (total_cube > 19 && total_cube < 40)   {
         printf("First 20 meter cube: RM11.00\n");
         printf("20 - 40 meter cube: RM%.2f\n", ((total_cube - 20)*0.85));
         total_charge = (total_cube-20)*0.85+3.5+11;
@@ -77,7 +77,7 @@ int main()
     printf("\n\n\n=====================================\n");
     
     if (calc_again == 2)    {
-        printf("\n\nThank you")
+        printf("\n\nThank you");
         break;
     }   
     
