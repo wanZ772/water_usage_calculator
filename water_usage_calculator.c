@@ -77,6 +77,7 @@ int main()
     printf("\n\n\n=====================================\n");
     
     if (calc_again == 2)    {
+        printf("\n\nThank you")
         break;
     }   
     
