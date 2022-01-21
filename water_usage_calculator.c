@@ -53,9 +53,9 @@ int main()
         
     } else if (total_cube >= 40)   {
         printf("First 20 meter cube: RM11.00\n");
-        printf("20 - 40 meter cube: RM%.2f\n", (((total_cube - 20) - 40)*0.85));
+        printf("20 - 40 meter cube: RM%.2f\n", (((total_cube - 20) - (total_cube - 40))*0.85));
         printf("40 meter cube onwards: RM%.2f\n", ((total_cube - 40)*1.00));
-        total_charge = (((total_cube-20)-40)*0.85) + (total_cube - 40*1.00) + 3.5+11;
+        total_charge = (((total_cube - 20)-(total_cube - 40))*.85) + (total_cube - 40*1.00) + 3.5+11;
         
     } else {
         printf("40 meter cube onwards: RM0.00\n");
