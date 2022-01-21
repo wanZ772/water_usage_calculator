@@ -45,22 +45,17 @@ int main()
         total_charge = total_cube*.55+3.5;
         printf("First 20 meter cube: RM%.2f\n", total_cube*.55);
         
-    }
-    if (total_cube > 19 && total_cube < 40)   {
+    } else if (total_cube >= 20 && total_cube < 40)   {
         printf("First 20 meter cube: RM11.00\n");
         printf("20 - 40 meter cube: RM%.2f\n", ((total_cube - 20)*0.85));
+        printf("40 meter cube onwards: RM0.00\n");
         total_charge = (total_cube-20)*0.85+3.5+11;
         
-    } else {
-        printf("20 - 40 meter cube: RM0.00\n");
-        
-    }
-    
-    if (total_cube > 40)   {
+    } else if (total_cube >= 40)   {
         printf("First 20 meter cube: RM11.00\n");
-        printf("20 - 40 meter cube: RM%.2f\n", ((total_cube - 20)*0.85));
-        printf("20 - 40 meter cube: RM%.2f\n", ((total_cube - 40)*1.00));
-        total_charge = (total_cube-20*0.85) + (total_cube - 40*1.00) + 3.5+11;
+        printf("20 - 40 meter cube: RM%.2f\n", (((total_cube - 20) - 40)*0.85));
+        printf("40 meter cube onwards: RM%.2f\n", ((total_cube - 40)*1.00));
+        total_charge = (((total_cube-20)-40)*0.85) + (total_cube - 40*1.00) + 3.5+11;
         
     } else {
         printf("40 meter cube onwards: RM0.00\n");
